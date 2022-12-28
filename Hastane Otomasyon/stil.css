@@ -1,0 +1,549 @@
+/*****************************genel sayfalar ve header.php css kodları******** ***************/
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #dedede;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo{
+    position: relative;
+    top: 10px;
+    float: left;
+    margin-left: 20px;
+}
+.dropdown{
+    margin: 0 auto;
+}
+nav{
+    height: 130px;
+    background-image: url("resim/arka2.jpg");
+    background-size: 100%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    padding: 0;
+    margin: 30;
+    float: right;
+    margin-right: 70px;
+}
+nav ul li{
+    
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    
+}
+nav ul li a{
+    display: block;
+    margin: 0 35px;
+    padding: 0 15px;
+    color: #213951;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 27px; 
+}
+nav ul li a:hover{
+    border-radius: 10px;
+    background: #dddddd;
+}
+nav ul ul{
+    position: absolute;
+    top: 30px;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    background-color: #213951;
+    width: 250px;
+    float: none;
+    display: list-item;
+    position: relative;
+    z-index: 1;
+}
+nav ul ul li #çık:hover{
+    color: white;
+    background: red;
+}
+nav ul li ul a{
+    color: white;
+}
+nav ul ul li #hesap:hover{
+    color: #213951;
+}
+/* *********************************index.php css kodları********************************** */
+.index{
+    background-image: url("resim/slider.jpg");
+    background-size: 109%;
+}
+.index img{
+    position: relative;
+    left: 20px;
+    margin-right: 30px;
+    float: left;
+}
+.index #resim{
+    position: relative;
+    top: 12px;
+    right: 40px;
+}
+.giris_buton{
+    position: relative;
+    top: 540px;
+    right: 800px;
+    background-color: #33B9B2;
+    border: none;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 22px;
+    transition: 0.5s;
+    }
+.giris_buton:hover{
+    transform: scale(1.1);
+    background-color:#258682;
+}
+#kayıt{
+    background-color: #ff2b2b;
+}
+#kayıt:hover{
+    background-color: #cd0404;
+}
+/* *********************************giris.php css kodları*********************************** */
+.tableOuter{
+    position: relative;
+    bottom: 22px;
+    width: 770px;
+    height: 770px;
+    background-color: #F9F9F9;
+}
+.tableOuter h1{
+    position: relative;
+    top: 70px;
+    color: red;
+}
+input[type="text"],input[type="password"]{
+    position: relative;
+    top: 100px;
+    width: 500px;
+    margin: 10px;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: gray;
+}
+#resim1{
+    position: relative;
+    top: 30px;
+}
+#resim{
+    position: relative;
+    top:10px;
+}
+.tableOuter p{
+    color: red;
+    position: relative;
+    left: 100px;
+    padding: 10px;
+    top: 130px;
+    font-size: 17px;
+}
+.yanresim{
+    position: relative;
+    bottom: 782px;
+    float: right;
+    width: 740px;
+    height: 760px;
+    background-image: url("resim/aile.jpeg");
+    background-size: 180%;
+}
+.yanresim h2{
+    position: relative;
+    top: 500px;
+    color: #e7e7e7;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sub{
+    position: relative;
+    top: 130px;
+    height: 35px;
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 15px;
+    box-shadow: none;
+}
+#giris{
+    background-color: #1AB394;
+}
+#giris:hover{
+    background-color: #11795d;
+}
+/* uye.php dosyası ve giris.php dosyasındaki ortak alanlar giris.php css kodları bölümündedir*/
+/* *************uye.php css kodları*************** */
+input[type="checkbox"]{
+    position: relative;
+    right: 200px;
+    bottom: 244px;
+}
+h5{
+    position: relative;
+    bottom: 286px;
+}
+#uye{
+    background-color: #1890FF;
+}
+#uye:hover{
+    background-color: #1360a8;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+/* ***********************************anasayfa.php css kodları****************************** */
+.contarnier{
+    position: relative;
+    bottom: 25px;
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 450px;
+    border-radius: 15px;
+    height: 350px;
+    background: black;
+    margin: 0px 14px;
+    transition: 0.4s;
+}
+.box:hover{
+    transform: scale(1.1);
+    background: black;
+    z-index: 2;
+    opacity: 0.9;
+}
+.box img{
+    border-radius: 15px;
+    opacity: 0.4;
+}
+h2{
+    color: #E40;
+    position: relative;
+    top: 30px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+p{
+    position: relative;
+    bottom: 200px;
+    left: 35px;
+    color:#E4E3DE;
+    width: 350px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #E4E3DE;
+    padding: 10px;
+}
+/* ******************************hastane.php css kodları************************************* */
+#randevu_div{
+    position: relative;
+    top: 70px;
+    left: 200px;
+    border: 2px white solid;
+    width: 1100px;
+    height: 650px;
+    border-radius: 15px;
+    background-image: url("resim/arka.jpg");
+    background-size: 100%;
+    box-shadow: 2px 2px 2px 2px white;
+
+}
+#hastaneh2{
+    border: 2px white solid;
+    width: 500px;
+    padding: 10px;
+    color: #e40;
+    position: relative;
+    bottom: 150px;
+    left: 470px;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px white;
+    border-radius: 8px;
+}
+select,
+#randevu_div input,button{
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    bottom: 120px;
+    width: 750px;
+    height: 50px;
+    margin-top: 40px;
+    background: #016275;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px 2px cyan;
+    
+}
+#randevu_div button:hover{
+    background: #039fbf;
+    transform: scale(1);
+    
+}
+#randevu_div form{
+    position: relative;
+    top: 160px;
+}
+/* ************************************aile.php css kodları**************************** */
+
+#ailehekimi_div{
+    position: relative;
+    top: 70px;
+    left: 200px;
+    border: 2px white solid;
+    width: 1100px;
+    height: 650px;
+    border-radius: 15px;
+    background-image: url("resim/arka.jpg");
+    background-size: 100%;
+    box-shadow: 2px 2px 2px 2px white;
+}
+#aileh2{
+    border: 2px white solid;
+    width: 500px;
+    padding: 10px;
+    color: #e40;
+    position: relative;
+    bottom: 110px;
+    left: 460px;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px white;
+    border-radius: 8px;
+}
+
+select,
+#ailehekimi_div input,button{
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    bottom: 120px;
+    width: 750px;
+    height: 50px;
+    margin-top: 40px;
+    background: #016275;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px 2px cyan;
+}
+#ailehekimi_div button:hover{
+    background: #039fbf;
+    transform: scale(1);
+}
+/* ******************************aşı.php css kodları************************ */
+#ası_div{
+    position: relative;
+    top: 70px;
+    left: 200px;
+    border: 2px white solid;
+    width: 1100px;
+    height: 650px;
+    border-radius: 15px;
+    background-image: url("resim/arka.jpg");
+    background-size: 100%;
+    box-shadow: 2px 2px 2px 2px white;
+}
+#asıh2{
+    border: 2px white solid;
+    width: 500px;
+    padding: 10px;
+    color: #e40;
+    position: relative;
+    bottom: 110px;
+    left: 460px;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px white;
+    border-radius: 8px;
+}
+select,
+#ası_div input,button{
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    bottom: 120px;
+    width: 750px;
+    height: 50px;
+    margin-top: 40px;
+    background: #016275;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px 2px cyan;
+}
+#ası_div button:hover{
+    background: #039fbf;
+    transform: scale(1);
+    
+}
+#tarihseç{
+    position: relative;
+    width: 450px;
+    height: 40px;
+    margin-top: 10px;
+    background: #016275;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+}
+/* ***********************randevu.php ve hesap.php css kodları***************************** */
+table{
+    font-family: Arial, helvatica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td,tr{
+    color: black;
+    border: 1px solid darkcyan;
+    text-align: center;
+    padding: 8px;
+    background: #bdbdbd;
+}
+th{
+    background-color: #039fbf;
+}
+.sil{
+    color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: red;
+    background-color: red;
+    padding: 5px;
+    
+}
+.sil:hover{
+    background-color: #c00707;
+    border-color: #c00707;
+}
+.guncel{
+    color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #147203;
+    background-color: #147203;
+    padding: 5px;
+    
+}
+.guncel:hover{
+    background-color: #1daf04;
+    border-color: #1daf04;
+}
+/* ******************************duzenle.php css kodları*********************************** */
+.hesabim_content{
+    position: relative;
+    width: 60%;
+    height: 430px;
+    left: 300px;
+    top: 5px;
+    background: #aaa8a8;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+.label{
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.label label{
+    position: relative;
+    font-size: 25px;
+    line-height: 65px;
+    left: 10px;
+    top: 120px;
+}
+.label input{
+    position: relative;
+    float: right;
+    height: 40px;
+}
+.hesabim_content button{
+    position: relative;
+    top: 80px;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #1890FF;
+}
+.hesabim_content button:hover{
+    background: #1870c2;
+}
+h3{
+    position: relative;
+    top: 10px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #e40;
+}
+/* *******************************uyarı mesajları*******************************************/
+.uyarı{
+    background: #8dd591;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+b{
+    color: #264628;
+}
+.hata{
+    background: #f35151;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hata b{
+    color: darkred;
+}
+
